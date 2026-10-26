@@ -1,0 +1,16 @@
+{
+  "name": "whiteboard-server",
+  "version": "0.0.1",
+  "description": "A Express/Socket.io server for live whiteboard editing",
+  "license": "ISC",
+  "author": "Caleb Cassin",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "express": "^5.3.0",
+    "socket.io": "^4.8.4"
+  }
+}

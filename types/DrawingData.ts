@@ -8,10 +8,15 @@ export interface Stroke {
       }
     | "eraser";
   points: [number, number][];
+  width: number;
 }
 
 export function isStroke(obj: any) {
-  return typeof obj.color !== "undefined" && typeof obj.points !== "undefined";
+  return (
+    typeof obj.color !== "undefined" &&
+    typeof obj.points !== "undefined" &&
+    typeof obj.width === "number"
+  );
 }
 
 export interface User {
